@@ -1,0 +1,6 @@
+There should be a ‘metadata’ file in each of the folder, this can be either a ‘txt’ file (preferential) or any type of file that best suits the demands, and it should describe:
+- Time of the experiments
+- Protocol of the experiments, including any special treatment.
+- [optional] The hypothesis/objective of the experiments
+--------------------------------------------------------------------------------------------------------------------------------------
+With regards to this project, there is no metadata that I can think of…
