@@ -1,0 +1,19 @@
+1. To grep certain strings in all the sub-folders:
+grep -r 'string'
+
+2. To grep grep all experiment summaries using mCherry in a project folder
+
+grep -iF 'mCherry' */Summary.csv
+
+3. To get a list of all experiments (or summaries in this example) done in the past 3 weeks:
+
+find /hd/gdrive/Cam_PhD -mtime -21 | grep -i summary
+
+Use '-x' to search files modified in the past x number of days
+
+4. To get a list of experiment summaries done in the past 3 weeks and cope those to a directory to read:
+
+find . -mtime -21 -iname *summary* -exec cp {} ./Recent_Experiment \;
+
+5. To add a new experiment into the 'Results' chapter of LaTex files: In the experiment folder (e.g. 20201115), do 
+$ cat metadata >> ../3.Results.tex

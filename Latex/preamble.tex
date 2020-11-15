@@ -1,0 +1,24 @@
+% !TEX root = ./DataManagement.tex
+% Use this file to include packages, define functions/shortcuts and edit styles  
+
+%==================package=========================
+\usepackage{lscape}
+\usepackage{longtable}
+%\usepackage{textgreek}
+%\usepackage{soul}
+\usepackage{graphicx}
+%\usepackage{comment} 
+
+%===============style==============================
+%\onehalfspacing
+
+%================function==========================
+%\newcommand{\rawdata}{}
+\newcommand{\experiment}[1]{%
+    \graphicspath{ {../#1/} }
+
+    \section{#1}
+
+    \IfFileExists{../#1/summary.png}{\includegraphics[width=\textwidth]{summary}}{}
+
+}

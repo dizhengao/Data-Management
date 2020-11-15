@@ -1,0 +1,21 @@
+% !TEX root = ./DataManagement.tex
+\chapter{Results}
+List detailed metadata, raw data and results here.\\
+Include a 'rawdata' environment to be able to ignore raw data in overview mode.
+Include a 'code' environment to be able to ignore codes in brief overview mode.
+
+
+Define a 'experiment' command, which takes 'date' as an argument and a number of optional arguments such as relative location to raw data file, summary file (e.g. a .svg file) 
+
+\iffalse
+
+It will be like this:
+\experiment{20201031}[<name or path-to-summary.xlsx>]
+
+    \rawdata
+    this will add rawdata, in csv. form, here
+
+    \code
+    this will add codes for this analysis here.
+
+\fi

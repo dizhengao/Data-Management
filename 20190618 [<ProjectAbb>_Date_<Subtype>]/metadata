@@ -1,0 +1,17 @@
+%There should be a metadata file in each of the folder, this can be either a txt file %(recommend) or any type of file that best suits the demands, and it should describe:
+%- Time of the experiments
+%- Protocol of the experiments, including any special treatment.
+%- [optional] The hypothesis/objective of the experiments
+%This file will be directly appended into the 3.Results.tex after each experiment is finalised by running
+%$ cat metadata >> ../latex/3.Results.tex
+%example below:
+
+\experiment{20190618}
+Time: 20190618\\
+Time series measurement of FP-CYP76AD6 fluorescence. 
+
+Samples:\\
+A1 12ul kit + 28ul H2O\\
+A2 12ul kit + 7ul SP6:mCherry + 21ul 2.5mM L-Tyr\\
+A3 12ul kit + 7ul SP6:DODA-mCherry + 21ul 2.5mM L-DOPA\\
+A4 12ul kit + 7ul SP6:DODA-mCherry + 10.5ul 2.5mM L-Tyr + 10.5ul 2.5mM L-DOPA\\

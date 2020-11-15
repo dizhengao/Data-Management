@@ -1,1 +1,9 @@
-useful commands
+*.aux
+*.toc
+*.fls
+*.log
+*.pdf
+*.gz
+*.fdb*
+*.lot
+*.lof
